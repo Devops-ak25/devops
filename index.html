@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Registration Form</u></h2>
+    <form id="registrationform">
+        <div>
+            <label for="name">Name:   </label>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label for="rollno">Roll No: </label>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label for="branch">Branch: </label>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label for="event">Event: </label>
+            <select id="event" name="event">
+                <option  value="tech">Tech Event</option>
+                <option value="sport">Sport Event</option>
+                <option value="dance">Dance Event</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email">
+        </div>
+        <br>
+        <center><button type="submit">Submit</button></center>
+    </form>
+
+    <script>
+        document.getElementById('registrationform').addEventListener('submit',function(event) {
+            event.preventDefault();
+            alert('login successful');
+        });
+    </script>
+</body>
+</html>
